@@ -254,4 +254,4 @@ def mongo_screen():
 
 # Serve the static files (HTML Dashboard) on the root path LAST
 # to ensure API routes take precedence
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+app.mount("/", StaticFiles(directory=STATIC, html=True), name="static")
